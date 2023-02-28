@@ -7,41 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
     <style>
-        input {
-            width: 145px;
-            border: 2px solid;
-        }
-        #result {
-            width: 294px;
-            border: 2px solid;
-            border-radius: 5px;
-            color: white;
-        }
-        .main {
-            padding: 5px;
-            height: 150px;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-        }
+       .main {
+        border: 2px solid;
+        width: 300px;
+        background-color: #032d60;
+        margin: 10px;
+       }
     </style>
 </head>
 <body>
-    <div class="w-100 main" style="background-color: #032d60;">
-    <div>
-    <input type="text" class="ms-2 p-2 rounded-3 w-sm-25" placeholder="enter number" id="first">
-    <input type="text" class="my-2 p-2 rounded-3 w-sm-25" placeholder="enter number" id="second">
-    </div>
-    <div id="result" class="m-2 p-2">
-        0
-    </div>
-    <div class="m-2">
-    <button class="btn rounded-3 btn-warning"  onclick="multiply()">Multiply</button>
-    <button class="btn rounded-3 btn-info" onclick="divide()">Divide</button>
-    <button class="btn rounded-3 btn-success"  onclick="subtract()">subtract</button>
-    <button class="btn rounded-3 btn-danger" onclick="add()">Addition</button>
-    </div>
+<div class="main rounded-3 m-sm-0 w-sm-25%">
+<div class="d-flex">
+    <input type="text" id="first" class="w-50 w-sm-25"> 
+    <input type="text" id="second" class="w-50 w-sm-25">
+</div>
+<div id="result" class="border text-light">
+0
+</div>
+<div>
+<button class="btn rounded-3 btn-warning"  onclick="multiply()">Multiply</button>
+<button class="btn rounded-3 btn-info" onclick="divide()">Divide</button>
+<button class="btn rounded-3 btn-success"  onclick="subtract()">subtract</button>
+<button class="btn rounded-3 btn-danger" onclick="add()">Addition</button>
+</div>
 </div>
     
 
