@@ -14,14 +14,24 @@
         #result {
             width: 294px;
             border: 2px solid;
+            border-radius: 5px;
+            color: white;
+        }
+        .main {
+            padding: 5px;
+            height: 150px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
         }
     </style>
 </head>
 <body>
-    <div class="w-100 d-flex flex-column justify-content-center">
+    <div class="w-100 main" style="background-color: #032d60;">
     <div>
-    <input type="text" class="ms-2 p-2" placeholder="enter number" id="first">
-    <input type="text" class="my-2 p-2" placeholder="enter number" id="second">
+    <input type="text" class="ms-2 p-2 rounded-3 w-sm-25" placeholder="enter number" id="first">
+    <input type="text" class="my-2 p-2 rounded-3 w-sm-25" placeholder="enter number" id="second">
     </div>
     <div id="result" class="m-2 p-2">
         0
