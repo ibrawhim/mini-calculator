@@ -6,40 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="media.css">
-    <style>
-       .main {
-        border: 2px solid;
-        width: 300px;
-        background-color: #032d60;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-       }
-       button {
-        width: 70px;
-       }
-    </style>
 </head>
+<style>
+    button {
+        width: 84px;
+    }
+</style>
 <body>
-<div class="main rounded-3">
-<div class="d-flex">
-    <input type="text" id="first" class="w-50 m-2 w-sm-50% w-md-100%"> 
-    <input type="text" id="second" class="w-50 m-2 w-sm-50% w-md-100%">
-</div>
-<div id="result" class="border m-2 text-light"><span style="color: #032d60;">0</span></span>
-</div>
-<div class="my-2 button">
-<button class="btn rounded-3 btn-warning"  onclick="multiply()">x</button>
-<button class="btn rounded-3 btn-info" onclick="divide()">/</button>
-<button class="btn rounded-3 btn-success"  onclick="subtract()">-</button>
-<button class="btn rounded-3 btn-danger" onclick="add()">+</button>
-</div>
-</div>
-    
-
+    <div class="col-lg-4 col-md-7 col-sm-10 mt-lg-4 mt-md-2 mt-sm-2 mx-auto p-4 rounded-3 shadow" style="background-color: #032d60;">
+        <input type="number" id="first">
+        <input type="number" id="second">
+        <div id="result" style="color: white;"><span style="color: #032d60;">0</span></div>
+        <button type="button" onclick="multiply()" class="btn btn-warning">multiply</button>
+        <button type="button" onclick="divide()" class="btn btn-danger">divide</button>
+        <button type="button" onclick="subtract()" class="btn btn-info">subtract</button>
+        <button type="button" onclick="add()" class="btn btn-dark">Addition</button>
+    </div>
+</body>
+</html>
 
     <script>
         function multiply() {
