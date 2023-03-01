@@ -1,9 +1,10 @@
- @media screen and (max-width: 475px){
+ @media screen and (max-width: 414px){
     .main {
-        width: 70vw;
-        margin-left: 40px;
+        width: 59vw;
+        /* margin-left: 40px; */
     }
-    .button {
-        margin-left: 10px;
+    button {
+        padding: 0;
+        width: 55px; 
     }
  }
