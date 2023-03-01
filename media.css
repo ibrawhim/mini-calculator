@@ -1,0 +1,9 @@
+ @media screen and (max-width: 475px){
+    .main {
+        width: 80vw;
+        margin-left: 40px;
+    }
+    .button {
+        margin-left: 15px;
+    }
+ }
