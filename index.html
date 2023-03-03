@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
 </head>
 <body style="background-color: #302d60;">
-   <div class="col-lg-5 bg-info col-md-5 col-sm-5 col-xsm-4 px-4 py-5 mt-5 rounded-1 mx-auto border shadow d-flex flex-column justify-content-center align-items-center">
-    <h3 class="fw-bold" style="color: #302d60;"> MINI CALCULATOR</h3>
-    <div class="col-lg-5 col-md-5 col-sm-10 col-xsm-10">
-        <input type="number" class="p-2 w-sm-25 col-xsm-5" placeholder="First value" id="first"><input type="number" class="p-2" placeholder="Second value" id="second">
+    <div class="col-lg-7 col-md-7 col-sm-9 mt-lg-4 mt-md-4 mt-sm-2 mx-auto shadow bg-light p-4 rounded-3">
+        <p class=" fs-3 fw-bold text-info text-center">Mini calculator:</p>
+        <div class="form-group d-flex bg-light">
+            <!-- <input type="number" placeholder="Input your score" id="score" class="form-control shadow-sm p-2">  -->
+            <input type="number" class="form-control bg-info" id="first"><input type="number" class="form-control bg-info" id="second">
+        </div>
+        <div class="text-center border border-1 border-info p-1 fs-4 fw-bold rounded-3 bg-light" id="result"><span class="text-light">0</span></div>
+        <div class="form-group d-flex justify-content-center align-items-center">
+            <!-- <button class="btn btn-info w-100" onclick="checkScore()">Check</button> -->
+            <button type="button" onclick="multiply()" class="btn btn-warning">multiply x</button>
+            <button type="button" onclick="divide()" class="btn btn-info">divide /</button>
+            <button type="button" onclick="add()" class="btn btn-success">addition +</button>
+            <button type="button" onclick="subtract()" class="btn btn-primary">subtraction -</button>
+        </div>
     </div>
-    <div id="result" style="width: 350px;" class="border border-2 py-2 m-4 rounded-1"><span class="text-info">0</span></div>
-    <div class="">
-        <button type="button" onclick="multiply()" class="btn btn-success mx-2 mx-xsm-0">multiply</button>
-        <button type="button" onclick="divide()" class="btn btn-danger mx-2 mx-xsm-0">Divide</button>
-        <button type="button" onclick="add()" class="btn btn-warning mx-2 mx-xsm-0">Addition</button>
-        <button type="button" onclick="subtract()" class="btn btn-primary mx-2 mx-xsm-0">Subtract</button>
-    </div>
-   </div> 
 
    <script>
        function multiply() {
